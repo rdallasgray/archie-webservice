@@ -4,27 +4,24 @@
      xmlns:wikitude="http://www.openarml.org/wikitude/1.0">
 
   <Document>
-    <ar:provider id="archie-antonine.org">
-      <ar:name>ARCHIE: A Walking Tour on the Antonine Wall</ar:name>
-      <ar:description>A walk from the centre of Glasgow to a fortlet on the Antonine Wall.</ar:description>
-      <wikitude:providerUrl>{{ config['PROVIDER_SITE_ROOT'] }}</wikitude:providerUrl>
-      <wikitude:tags>travel, hiking, history, scotland</wikitude:tags>
-      <wikitude:logo>{{ config['PROVIDER_SITE_ROUTE' ] }}/wikitude-logo.png </wikitude:logo>
-      <wikitude:icon>{{ config['PROVIDER_SITE_ROUTE' ] }}/wikitude-icon.png </wikitude:icon>
-      <wikitude:shortName>ARCHIE</wikitude:shortName>
-      <wikitude:promotionText>Promotion text if we want ie</wikitude:promotionText>
-      <wikitude:promotionGraphic>{{ config['PROVIDER_SITE_ROUTE' ] }}/promotionGraphic.png </wikitude:promotionGraphic>
-      <wikitude:hiResIcon>{{ config['PROVIDER_SITE_ROUTE' ] }}/hi_res_image.png </wikitude:hiResIcon>
-      <wikitude:featureGraphic>{{ config['PROVIDER_SITE_ROUTE' ] }}/featureGraphic.png </wikitude:featureGraphic>
+    <ar:provider id="{{ config['WORLD_PROVIDER_ID'] }}">
+      <ar:name>{{ config['WORLD_NAME'] }}</ar:name>
+      <ar:description>{{ config['WORLD_DESCRIPTION'] }}</ar:description>
+      <wikitude:providerUrl>{{ config['WORLD_PROVIDER_URL'] }}</wikitude:providerUrl>
+      <wikitude:tags>{{ config['WORLD_TAGS'] }}</wikitude:tags>
+      <wikitude:logo>{{ config['WORLD_PROVIDER_URL'] ~ config['WORLD_LOGO_URL'] }}</wikitude:logo>
+      <wikitude:icon>{{ config['WORLD_PROVIDER_URL' ] ~ config['WORLD_ICON_URL'] }}</wikitude:icon>
+      <wikitude:shortName>{{ config['WORLD_SHORT_NAME'] }}</wikitude:shortName>
       <wikitude:noPromotion>true</wikitude:noPromotion>
     </ar:provider>
-    <Placemark id="123">
-      <ar:provider>mountain-tours-I-love.com</ar:provider>
-      <name>Gaisberg</name>
-      <description>Gaisberg is a mountain to the east of Salzburg, Austria</description>
+    {% for poi in pois %}
+    <Placemark id="{{ config['WORLD_PROVIDER_ID'] }}-poi-{{ poi.id }}">
+      <ar:provider>{{ config['WORLD_PROVIDER_ID'] }}</ar:provider>
+      <name>{{ poi.name }}</name>
+      <description>{{ poi.description }}</description>
       <wikitude:info>
 	<wikitude:thumbnail>
-	  http://www.mountain-tours-I-love.com/gaisberg-thumb.png 
+	  
 	</wikitude:thumbnail>
 	<wikitude:hiResImageUrl>
 	  http://www.mountain-tours-I-love.com/hi_image_resolution.png 
@@ -42,5 +39,6 @@
 	<coordinates>13.11,47.81,1158</coordinates>
       </Point>
     </Placemark>
+    {% endfor %}
   </Document>
 </kml>

@@ -1,5 +1,5 @@
-from archie import app
-from flask import redirect, url_for, render_template
+from archie import app, models
+from flask import make_response, redirect, url_for, render_template
 
 # routes
 @app.route('/')
@@ -8,4 +8,6 @@ def index():
     
 @app.route('/pois')
 def pois():
-    return render_template('pois.xml')
+    resp = make_response(render_template('pois.xml', pois=models.Poi.query.all()))
+    resp.headers['Content-type'] = 'text/xml'
+    return resp
