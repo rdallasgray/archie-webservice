@@ -1,5 +1,5 @@
 from archie import db
-from archie.models import Poi
+from archie.models import Poi, Attachment
 
 def begin():
     db.drop_all()

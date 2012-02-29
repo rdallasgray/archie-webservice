@@ -20,23 +20,34 @@
       <name>{{ poi.name }}</name>
       <description>{{ poi.description }}</description>
       <wikitude:info>
+	{% if poi.thumbnail %}
 	<wikitude:thumbnail>
-	  
+	  {{ poi.thumbnail }}	  
 	</wikitude:thumbnail>
+	{% endif %}
+	{% if poi.hi_res_image_url %}
 	<wikitude:hiResImageUrl>
-	  http://www.mountain-tours-I-love.com/hi_image_resolution.png 
+	  {{ poi.hi_res_image_url }}
 	</wikitude:hiResImageUrl>
-	<wikitude:phone>555-9943</wikitude:phone>
-	<wikitude:url name="Read from Wikipedia">http://en.wikipedia.org/wiki/Gaisberg </wikitude:url>
+	{% endif %}
+	{% if poi.marker_icon_url %}
+	<wikitude:markerIconUrl>
+	  {{ poi.marker_icon_url }}
+	</wikitude:markerIconUrl>
+	{% endif %}
+	{% if poi.attachments %}
 	<wikitude:attachments>
-	  <wikitude:attachment name="Hillclimb Race"> 
-	    <wikitude:attachment-thumbnail>http://www.a-site.com/thumb-file.png </wikitude:attachment-thumbnail>
-	    <wikitude:attachment-url>http://www.mountain-tours-I-love.com/gaisberg-hillclimb-race-to-print.pdf </wikitude:attachment-url> 
+	  {% for attachment in poi.attachments %}
+	  <wikitude:attachment name="{{ attachment.name }}"> 
+	    <wikitude:attachment-thumbnail>{{ attachment.thumbnail }}</wikitude:attachment-thumbnail>
+	    <wikitude:attachment-url>{{ attachment.url }}</wikitude:attachment-url> 
 	  </wikitude:attachment>
+	  {% endfor %}
 	</wikitude:attachments>
+	{% endif %}
       </wikitude:info>
       <Point>
-	<coordinates>13.11,47.81,1158</coordinates>
+	<coordinates>{{ poi.co_ordinates }}</coordinates>
       </Point>
     </Placemark>
     {% endfor %}
