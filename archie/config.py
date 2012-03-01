@@ -1,7 +1,9 @@
+import os
+
 class Config(object):
     DEBUG = False
     TESTING = False
-    SQLALCHEMY_DATABASE_URI = 'postgresql://archie:Antonine2008@localhost/archie'
+    SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
     WORLD_PROVIDER_ID = 'archie-antonine'
     WORLD_PROVIDER_URL = 'http://archie-antonine.org'
     WORLD_NAME = 'ARCHIE: A Walking Tour on the Antonine Wall'
@@ -12,6 +14,7 @@ class Config(object):
     WORLD_SHORT_NAME = 'ARCHIE'
 
 class DevelopmentConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgres://archie:Antonine2008@localhost/archie'
     DEBUG = True
 
 class TestingConfig(Config):
