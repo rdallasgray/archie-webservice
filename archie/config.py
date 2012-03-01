@@ -1,8 +1,7 @@
 class Config(object):
     DEBUG = False
     TESTING = False
-    #    SQLALCHEMY_DATABASE_URI = 'postgresql://archie:Antonine2008@localhost/archie'
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///archie.db'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://archie:Antonine2008@localhost/archie'
     WORLD_PROVIDER_ID = 'archie-antonine'
     WORLD_PROVIDER_URL = 'http://archie-antonine.org'
     WORLD_NAME = 'ARCHIE: A Walking Tour on the Antonine Wall'
