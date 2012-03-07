@@ -91,8 +91,7 @@ data = [
     },
     {
         "name": "Balmore Road and Balmuildy Bridge",
-        "description": "19. Opposite Balmore Road is the site of Balmuildy Fort, through which the Antonine Wall passed.
-At this point you can proceed along the South bank of the Kelvin, although the path will become muddy, or take Balmore Road South to Balmuildy Road.",
+        "description": "19. Opposite Balmore Road is the site of Balmuildy Fort, through which the Antonine Wall passed. At this point you can proceed along the South bank of the Kelvin, although the path will become muddy, or take Balmore Road South to Balmuildy Road.",
         "co_ordinates": "55.918390,-4.274481,37"
     },
     {
