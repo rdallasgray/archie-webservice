@@ -106,22 +106,22 @@ data = [
     },
     {
         "name": "Archaeological find: Statuette of Mars Ultor",
-        "description": "20b. Materials: Sandstone. Dimensions: 0.56 x 0.16 x 0.15m; 0.16 x 0.26 x 0.17m (base). Location: Balmuildy fort, vicinity of, Balmuildy farm, Cadder, Strathkelvin District, Strathclyde Region, Scotland (NS5817174). Context: Annexe, SE of fort AD 142-180 Roma",
+        "description": "20b. Archaeological find: Statuette of Mars Ultor.",
         "co_ordinates": "55.917522,-4.270957,42"
     },
     {
         "name": "Archaeological find: Head of a Nymph or Goddess",
-        "description": "20c. Materials: Sandstone. Dimensions: 0.30 x 0.25m. Location: Balmuildy fort, vicinity of, Balmuildy farm, Cadder, Strathkelvin District, Strathclyde Region, Scotland (NS581716). Context: Cold bath room, annexe bathhouse, SE of fort AD 142-180 Roman, Antonin",
+        "description": "20c. Archaeological find: Head of a Nymph or Goddess",
         "co_ordinates": "55.917461,-4.270561,42"
     },
     {
         "name": "Archaeological find: Statuette of Victory",
-        "description": "20d. Materials: Sandstone. Dimensions: 0.56 x 0.33 x 0.10m. Location: Balmuildy farm, Cadder, Strathkelvin District, Strathclyde Region, Scotland (NS581717). Context: Annexe, SE of fort AD 142-180 Roman, Antonine",
+        "description": "20d. Archaeological find: Statuette of Victory.",
         "co_ordinates": "55.917559,-4.270364,41"
     },
     {
         "name": "Archaeological find: Altar to Fortuna",
-        "description": "20e. Materials: Sandstone. Dimensions: 0.74 x 0.33m. Marks: DEAE FORTUNAE CAECILIUS NEPOS TRIB. Location: Balmuildy fort, Cadder, Strathkelvin District, Strathclyde Region, Scotland (NS582717). Context: In bathhouse, inside NE rampart of fort, face downwards over the foundation of the south wall. mid 2nd C. AD Roman, Antonine",
+        "description": "20e. Archaeological find: Altar to Fortuna",
         "co_ordinates": "55.917678,-4.269605,40"
     },
     {
