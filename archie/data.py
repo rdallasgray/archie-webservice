@@ -2,7 +2,7 @@ data = [
     {
         "name": "Kelvin Stevenson Memorial Parish Church",
         "description": "1. Kelvin Stevenson Memorial Church. Follow the steps down to Garriochmill Road.",
-        "co_ordinates": "55.877773,-4.278837,33"
+        "co_ordinates": "-4.278837,55.877773,33"
     }# ,
     # {
     #     "name": "North Woodside Flint Mill",
