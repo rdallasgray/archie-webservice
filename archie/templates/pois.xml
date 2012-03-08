@@ -9,8 +9,12 @@
       <ar:description>{{ config['WORLD_DESCRIPTION'] }}</ar:description>
       <wikitude:providerUrl>{{ config['WORLD_PROVIDER_URL'] }}</wikitude:providerUrl>
       <wikitude:tags>{{ config['WORLD_TAGS'] }}</wikitude:tags>
+      {% if config['WORLD_LOGO_URL'] %}
       <wikitude:logo>{{ config['WORLD_PROVIDER_URL'] ~ config['WORLD_LOGO_URL'] }}</wikitude:logo>
+      {% endif %}
+      {% if config['WORLD_ICON_URL'] %}
       <wikitude:icon>{{ config['WORLD_PROVIDER_URL' ] ~ config['WORLD_ICON_URL'] }}</wikitude:icon>
+      {% endif %}
       <wikitude:shortName>{{ config['WORLD_SHORT_NAME'] }}</wikitude:shortName>
       <wikitude:noPromotion>true</wikitude:noPromotion>
     </ar:provider>
