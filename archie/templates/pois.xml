@@ -53,7 +53,7 @@
 	  <wikitude:target name="CLICK_MAP">
 	    <wikitude:tExecution>
 	      <wikitude:tUrl>
-		{{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id}}&action=click_map&ip=%%IP%%&user_agent=%%USER_AGENT%%&device=%%DEVICE%%&os=%%OS%%&action_time=%%ACTION_TIME%%&latitude=%%LATITUDE_DEC%%&longitude=%%LONGITUDE_DEC%%
+		{{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id}}&amp;action=click_map&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
 	      </wikitude:tUrl>
 	    </wikitude:tExecution>
 	  </wikitude:target>
