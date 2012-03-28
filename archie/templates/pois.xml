@@ -49,6 +49,15 @@
 	  {% endfor %}
 	</wikitude:attachments>
 	{% endif %}
+	<wikitude:targets>
+	  <wikitude:target name="CLICK_MAP">
+	    <wikitude:tExecution>
+	      <wikitude:tUrl>
+		{{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id}}&action=click_map&ip=%%IP%%&user_agent=%%USER_AGENT%%&device=%%DEVICE%%&os=%%OS%%&action_time=%%ACTION_TIME%%&latitude=%%LATITUDE_DEC%%&longitude=%%LONGITUDE_DEC%%
+	      </wikitude:tUrl>
+	    </wikitude:tExecution>
+	  </wikitude:target>
+	</wikitude:targets>
       </wikitude:info>
       <Point>
 	<coordinates>{{ poi.co_ordinates }}</coordinates>
