@@ -5,6 +5,7 @@ class Poi(db.Model):
     name = db.Column(db.String(255))
     description = db.Column(db.String(255))
     type = db.Column(db.String(255))
+    waypoint_number = db.Column(db.String(255))
     co_ordinates = db.Column(db.String(255))
     thumbnail = db.Column(db.String(255))
     hi_res_image_url = db.Column(db.String(255))

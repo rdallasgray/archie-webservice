@@ -16,13 +16,13 @@ data = [
     {
         "name": "Foundations",
         "description": "Foundations of North Woodside Colour Mill.",
-        "type": "waypoint",
+        "type": "soi",
         "co_ordinates": "-4.281980,55.877966,33"
     },
     {
         "name": "Mill Wheels",
         "description": "Mill wheels from North Woodside Colour Mill.",
-        "type": "waypoint",
+        "type": "soi",
         "co_ordinates": "-4.282166,55.877895,32"
     },
     {
@@ -208,7 +208,7 @@ data = [
     {
         "name": "Altar to Fortuna",
         "description": "Archaeological find: Altar to Fortuna",
-        "type": "waypoint",
+        "type": "find",
         "co_ordinates": "-4.269605,55.917678,40"
     },
     {
