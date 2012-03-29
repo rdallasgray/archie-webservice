@@ -13,7 +13,7 @@
       <wikitude:logo>{{ config['WORLD_PROVIDER_URL'] ~ config['WORLD_LOGO_URL'] }}</wikitude:logo>
       {% endif %}
       {% if config['WORLD_ICON_URL'] %}
-      <wikitude:icon>{{ config['ASSESTS_BASE_URL' ] ~ config['WORLD_ICON_URL'] }}</wikitude:icon>
+      <wikitude:icon>{{ config['ASSETS_BASE_URL' ] ~ config['WORLD_ICON_URL'] }}</wikitude:icon>
       {% endif %}
       <wikitude:shortName>{{ config['WORLD_SHORT_NAME'] }}</wikitude:shortName>
       <wikitude:noPromotion>true</wikitude:noPromotion>
