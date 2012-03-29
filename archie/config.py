@@ -13,6 +13,7 @@ class Config(object):
     #    WORLD_LOGO_URL =
     ASSETS_BASE_URL = 'http://s3-eu-west-1.amazonaws.com/antonine-archie'
     WORLD_ICON_URL = '/world/ar-icon.png'
+    WORLD_LOGO_URL = '/world/ar-logo.png'
     WORLD_SHORT_NAME = 'ARCHIE'
 
 class DevelopmentConfig(Config):
