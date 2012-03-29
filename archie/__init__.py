@@ -9,5 +9,6 @@ db = SQLAlchemy(app)
 import archie.views
 import archie.install
 
+# recreate the db from scratch
 archie.install.begin()
 
