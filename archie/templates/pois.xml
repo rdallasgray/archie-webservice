@@ -49,37 +49,37 @@
 	  {% endfor %}
 	</wikitude:attachments>
 	{% endif %}
-	<wikitude:targets>
-	  <wikitude:target name="CLICK_MAP">
-	    <wikitude:tExecution>
-	      <wikitude:tUrl>
-		{{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=click_map&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
-	      </wikitude:tUrl>
-	    </wikitude:tExecution>
-	  </wikitude:target>
-	  <wikitude:target name="CLICK_CAM">
-	    <wikitude:tExecution>
-	      <wikitude:tUrl>
-		{{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=click_cam&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
-	      </wikitude:tUrl>
-	    </wikitude:tExecution>
-	  </wikitude:target>
-	  <wikitude:target name="VIEW_DETAILS">
-	    <wikitude:tExecution>
-	      <wikitude:tUrl>
-		{{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=view_details&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
-	      </wikitude:tUrl>
-	    </wikitude:tExecution>
-	  </wikitude:target>
-	  <wikitude:target name="VISIT_WEBPAGE">
-	    <wikitude:tExecution>
-	      <wikitude:tUrl>
-		{{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=visit_webpage&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
-	      </wikitude:tUrl>
-	    </wikitude:tExecution>
-	  </wikitude:target>
-	</wikitude:targets>
       </wikitude:info>
+      <wikitude:targets>
+	<wikitude:target name="CLICK_MAP">
+	  <wikitude:tExecution>
+	    <wikitude:tUrl>
+	      {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=click_map&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
+	    </wikitude:tUrl>
+	  </wikitude:tExecution>
+	</wikitude:target>
+	<wikitude:target name="CLICK_CAM">
+	  <wikitude:tExecution>
+	    <wikitude:tUrl>
+	      {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=click_cam&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
+	    </wikitude:tUrl>
+	  </wikitude:tExecution>
+	</wikitude:target>
+	<wikitude:target name="VIEW_DETAILS">
+	  <wikitude:tExecution>
+	    <wikitude:tUrl>
+	      {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=view_details&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
+	    </wikitude:tUrl>
+	  </wikitude:tExecution>
+	</wikitude:target>
+	<wikitude:target name="VISIT_WEBPAGE">
+	  <wikitude:tExecution>
+	    <wikitude:tUrl>
+	      {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=visit_webpage&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
+	    </wikitude:tUrl>
+	  </wikitude:tExecution>
+	</wikitude:target>
+      </wikitude:targets>
       <Point>
 	<coordinates>{{ poi.co_ordinates }}</coordinates>
       </Point>
