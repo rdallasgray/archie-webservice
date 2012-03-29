@@ -28,6 +28,10 @@
 	<wikitude:thumbnail>
 	  {{ poi.thumbnail }}	  
 	</wikitude:thumbnail>
+	{% else %}
+	<wikitude:thumbnail>
+	  {{ config['ASSETS_BASE_URL'] }}/world/default-poi-thumbnail.png	  
+	</wikitude:thumbnail>
 	{% endif %}
 	{% if poi.hi_res_image_url %}
 	<wikitude:hiResImageUrl>
@@ -37,6 +41,10 @@
 	{% if poi.marker_icon_url %}
 	<wikitude:markerIconUrl>
 	  {{ poi.marker_icon_url }}
+	</wikitude:markerIconUrl>
+	{% else %}
+	<wikitude:markerIconUrl>
+	  {{ config['ASSETS_BASE_URL'] }}/world/default-marker-icon.png	  
 	</wikitude:markerIconUrl>
 	{% endif %}
 	{% if poi.attachments %}
