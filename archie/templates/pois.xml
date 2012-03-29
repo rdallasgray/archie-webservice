@@ -24,29 +24,31 @@
       <name>{{ poi.name }}</name>
       <description>{{ poi.description }}</description>
       <wikitude:info>
+	<wikitude:thumbnail>
 	{% if poi.thumbnail %}
-	<wikitude:thumbnail>
 	  {{ poi.thumbnail }}	  
-	</wikitude:thumbnail>
 	{% else %}
-	<wikitude:thumbnail>
-	  {{ config['ASSETS_BASE_URL'] }}/world/default-poi-thumbnail.png	  
-	</wikitude:thumbnail>
+	  {{ config['ASSETS_BASE_URL'] }}/poi/default-poi-thumbnail.png	  
 	{% endif %}
+	</wikitude:thumbnail>
 	{% if poi.hi_res_image_url %}
 	<wikitude:hiResImageUrl>
 	  {{ poi.hi_res_image_url }}
 	</wikitude:hiResImageUrl>
 	{% endif %}
-	{% if poi.marker_icon_url %}
 	<wikitude:markerIconUrl>
-	  {{ poi.marker_icon_url }}
-	</wikitude:markerIconUrl>
+	{% if poi.type=='waypoint' %}
+	  {{ config['ASSETS_BASE_URL'] }}/poi/waypoint-icon-{{ poi.waypoint_number }}.png
+	{% elif poi.type=='view' %}
+	  {{ config['ASSETS_BASE_URL'] }}/poi/view-icon.png
+	{% elif poi.type=='soi' %}
+	  {{ config['ASSETS_BASE_URL'] }}/poi/soi-icon.png
+	{% elif poi.type=='find' %}
+	  {{ config['ASSETS_BASE_URL'] }}/poi/find-icon.png
 	{% else %}
-	<wikitude:markerIconUrl>
-	  {{ config['ASSETS_BASE_URL'] }}/world/default-marker-icon.png	  
-	</wikitude:markerIconUrl>
+	  {{ config['ASSETS_BASE_URL'] }}/poi/default-marker-icon.png
 	{% endif %}
+	</wikitude:markerIconUrl>
 	{% if poi.attachments %}
 	<wikitude:attachments>
 	  {% for attachment in poi.attachments %}
