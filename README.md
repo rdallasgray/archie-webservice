@@ -1,5 +1,5 @@
 ARCHIE: Augmented Reality for Cultural Heritage Interpretation and Education
-============================================================================
+----------------------------------------------------------------------------
 
 This part of an MSc Project to build an augmented reality application to encourage walking tours on the Antonine Wall in Central Scotland.
 
