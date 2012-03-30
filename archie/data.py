@@ -7,13 +7,6 @@ data = [
         "co_ordinates": "-4.278837,55.877773,33"
     },
     {
-        "name": "North Woodside Colour Mill",
-        "description": "Remains of North Woodside Colour Mill.",
-        "type": "waypoint",
-        "waypoint_number" : "2",
-        "co_ordinates": "-4.282098,55.877963,33"
-    },
-    {
         "name": "Foundations",
         "description": "Foundations of North Woodside Colour Mill.",
         "type": "soi",
@@ -24,6 +17,13 @@ data = [
         "description": "Mill wheels from North Woodside Colour Mill.",
         "type": "soi",
         "co_ordinates": "-4.282166,55.877895,32"
+    },
+    {
+        "name": "North Woodside Colour Mill",
+        "description": "Remains of North Woodside Colour Mill.",
+        "type": "waypoint",
+        "waypoint_number" : "2",
+        "co_ordinates": "-4.282098,55.877963,33"
     },
     {
         "name": "Lade",
@@ -89,7 +89,7 @@ data = [
     {
         "name": "Weir",
         "description": "Balgray Mill Weir.",
-        "type": "soi",
+        "type": "view",
         "co_ordinates": "-4.300241,55.891206,34"
     },
     {
