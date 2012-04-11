@@ -29,7 +29,7 @@ data = [
         "thumbnail": "nwfm_kiln"
     },
     {
-        "name": "Colour Mill",
+        "name": "Mill",
         "description": "Remains of North Woodside Flint Mill.",
         "type": "waypoint",
         "waypoint_number" : "2",
@@ -41,6 +41,11 @@ data = [
                 "type": "image",
                 "url": "nwfm_01.jpg",
                 "thumbnail": "nwfm_01"
+            },
+            {
+                "name": "North Woodside Flint Mill",
+                "type": "html",
+                "url": "nwfm_01.html"
             }
         ]
 
