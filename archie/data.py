@@ -44,8 +44,8 @@ data = [
             },
             {
                 "name": "North Woodside Flint Mill",
-                "type": "html",
-                "url": "nwfm_01.html"
+                "type": "pdf",
+                "url": "nwfm_02.pdf"
             },
             {
                 "name": "'On the Kelvin Near the Old Flint Mill, 1845' by William Simpson, 1898",
