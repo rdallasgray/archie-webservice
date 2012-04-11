@@ -50,7 +50,8 @@ data = [
             {
                 "name": "'On the Kelvin Near the Old Flint Mill, 1845' by William Simpson, 1898",
                 "type": "image",
-                "url": "nwfm_02.jpg"
+                "url": "nwfm_02.jpg",
+                "thumbnail": "nwfm_02"
             }
         ]
 
