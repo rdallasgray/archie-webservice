@@ -25,11 +25,11 @@
       <description>{{ poi.description }}</description>
       <wikitude:info>
 	<wikitude:thumbnail>
-	{% if poi.thumbnail %}
-	  {{ poi.thumbnail }}	  
-	{% else %}
+	  {% if poi.thumbnail %}
+	  {{ config['ASSETS_BASE_URL'] }}/poi/thumbnails/{{ poi.thumbnail }}.png
+	  {% else %}
 	  {{ config['ASSETS_BASE_URL'] }}/poi/default-poi-thumbnail.png	  
-	{% endif %}
+	  {% endif %}
 	</wikitude:thumbnail>
 	{% if poi.hi_res_image_url %}
 	<wikitude:hiResImageUrl>
