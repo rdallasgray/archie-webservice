@@ -16,11 +16,15 @@ class Poi(db.Model):
 
 class Attachment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    poi_id = db.Column(db.Integer, db.ForeignKey('poi.id'))
+    poi = db.relationship('Poi', backref=db.backref('attachments', lazy='dynamic'))
+    name = db.Column(db.String(255))
     type = db.Column(db.String(255))
     url = db.Column(db.String(255))
+    thumbnail = db.Column(db.String(255))
 
     def __repr__(self):
-        return '<Attachment %s>' % (self.name)
+        return '<Attachment %s>' % (self.url)
 
 class Target(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -33,4 +37,7 @@ class Target(db.Model):
     action_time = db.Column(db.String(255))
     latitude = db.Column(db.String(255))
     longitude = db.Column(db.String(255))
+
+    def __repr__(self):
+        return '<Target %s>' % (self.id)
     

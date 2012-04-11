@@ -52,9 +52,15 @@
 	{% if poi.attachments %}
 	<wikitude:attachments>
 	  {% for attachment in poi.attachments %}
-	  <wikitude:attachment name="{{ attachment.name }}"> 
-	    <wikitude:attachment-thumbnail>{{ attachment.thumbnail }}</wikitude:attachment-thumbnail>
-	    <wikitude:attachment-url>{{ attachment.url }}</wikitude:attachment-url> 
+	  <wikitude:attachment name="{{ attachment.name }}">
+	    {% if attachment.thumbnail %}
+	    <wikitude:attachment-thumbnail>
+	    {{ config['ASSETS_BASE_URL'] }}/attachment/thumbnails/{{ attachment.thumbnail }}.png
+	    </wikitude:attachment-thumbnail>
+	    {% endif %}
+	    <wikitude:attachment-url>
+	    {{ config['ASSETS_BASE_URL'] }}/attachment/{{ attachment.url }}
+	    </wikitude:attachment-url> 
 	  </wikitude:attachment>
 	  {% endfor %}
 	</wikitude:attachments>

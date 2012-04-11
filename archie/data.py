@@ -9,32 +9,40 @@ data = [
     },
     {
         "name": "Foundations",
-        "description": "Foundations of North Woodside Colour Mill.",
+        "description": "Foundations of North Woodside Flint Mill.",
         "type": "soi",
         "co_ordinates": "-4.281980,55.877966,33",
         "thumbnail": "nwfm_foundations"
     },
     {
         "name": "Mill Wheels",
-        "description": "Mill wheels from North Woodside Colour Mill.",
+        "description": "Mill wheels from North Woodside Flint Mill.",
         "type": "soi",
         "co_ordinates": "-4.282166,55.877895,32",
         "thumbnail": "nwfm_millwheel"
     },
     {
         "name": "Kiln",
-        "description": "The kiln of North Woodside Colour Mill.",
+        "description": "The kiln of North Woodside Flint Mill.",
         "type": "soi",
         "co_ordinates": "-4.282273,55.877861,32",
         "thumbnail": "nwfm_kiln"
     },
     {
         "name": "Colour Mill",
-        "description": "Remains of North Woodside Colour Mill.",
+        "description": "Remains of North Woodside Flint Mill.",
         "type": "waypoint",
         "waypoint_number" : "2",
         "co_ordinates": "-4.282098,55.877963,33",
-        "thumbnail": "nwfm_remains"
+        "thumbnail": "nwfm_remains",
+        "attachments": [
+            {
+                "name": "North Woodside Flint Mill, 1955",
+                "type": "image",
+                "url": "nwfm_01.jpg",
+                "thumbnail": "nwfm_01"
+            }
+        ]
 
     },
     {
