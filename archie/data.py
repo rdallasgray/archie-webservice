@@ -8,16 +8,10 @@ data = [
         "thumbnail": "ksm"
     },
     {
-        "name": "TEST",
-        "description": "TEST",
-        "type": "view",
-        "co_ordinates": "-4.279018,55.878783,45",
-    },
-    {
         "name": "Foundations",
         "description": "Foundations of North Woodside Flint Mill.",
         "type": "soi",
-        "co_ordinates": "-4.281980,55.877966,33",
+        "co_ordinates": "-4.281980,55.877966,33",  55.878798°   -4.279073° 
         "thumbnail": "nwfm_foundations"
     },
     {
