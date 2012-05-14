@@ -11,7 +11,7 @@ data = [
         "name": "TEST",
         "description": "TEST",
         "type": "view",
-        "co_ordinates": "-4.279056,55.878790,45",
+        "co_ordinates": "-4.279018,55.878783,45",
     },
     {
         "name": "Foundations",
