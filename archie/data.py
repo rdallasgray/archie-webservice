@@ -11,7 +11,7 @@ data = [
         "name": "Foundations",
         "description": "Foundations of North Woodside Flint Mill.",
         "type": "soi",
-        "co_ordinates": "-4.281980,55.877966,33",  55.878798°   -4.279073° 
+        "co_ordinates": "-4.281980,55.877966,33",
         "thumbnail": "nwfm_foundations"
     },
     {
@@ -45,7 +45,7 @@ data = [
             {
                 "name": "North Woodside Flint Mill",
                 "type": "pdf",
-                "url": "nwfm_02.pdf"
+                "url": "nwfm_02.html"
             },
             {
                 "name": "'On the Kelvin Near the Old Flint Mill, 1845' by William Simpson, 1898",
