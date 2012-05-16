@@ -147,7 +147,7 @@ data = [
     },
     {
         "name": "Viaduct",
-        "description": "Maryhill–Kelvindale Viaduct. Follow Kelvin Walkway Northwest.",
+        "description": "Maryhill-Kelvindale Viaduct. Follow Kelvin Walkway Northwest.",
         "type": "waypoint",
         "waypoint_number" : "11",
         "co_ordinates": "-4.30385,55.89648,44"
