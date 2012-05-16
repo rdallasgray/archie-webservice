@@ -12,7 +12,7 @@ data = [
         "description": "Remains of North Woodside Flint Mill.",
         "type": "waypoint",
         "waypoint_number" : "2",
-        "co_ordinates": "-4.28210,55.87790,32",
+        "co_ordinates": "-4.28160,55.87800,32",
         "thumbnail": "nwfm_remains",
         "attachments": [
             {
