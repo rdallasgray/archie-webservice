@@ -1,7 +1,7 @@
 data = [
     {
         "name": "Church",
-        "description": "Kelvin Stevenson Memorial Church. Follow the steps opposite down to Garriochmill Road.",
+        "description": "Kelvin Stevenson Memorial Church (1898). Follow the steps opposite down to Garriochmill Road.",
         "type": "waypoint",
         "waypoint_number" : "1",
         "co_ordinates": "-4.27907,55.87776,43",
@@ -13,26 +13,7 @@ data = [
         "type": "waypoint",
         "waypoint_number" : "2",
         "co_ordinates": "-4.28160,55.87800,32",
-        "thumbnail": "nwfm_remains",
-        "attachments": [
-            {
-                "name": "North Woodside Flint Mill, 1955",
-                "type": "image",
-                "url": "nwfm_01.jpg",
-                "thumbnail": "nwfm_01"
-            },
-            {
-                "name": "North Woodside Flint Mill",
-                "type": "pdf",
-                "url": "nwfm_02.html"
-            },
-            {
-                "name": "'On the Kelvin Near the Old Flint Mill, 1845' by William Simpson, 1898",
-                "type": "image",
-                "url": "nwfm_02.jpg",
-                "thumbnail": "nwfm_02"
-            }
-        ]
+        "thumbnail": "nwfm_remains"
 
     },
     {
@@ -40,7 +21,15 @@ data = [
         "description": "Foundations of North Woodside Flint Mill.",
         "type": "soi",
         "co_ordinates": "-4.28194,55.87797,33",
-        "thumbnail": "nwfm_foundations"
+        "thumbnail": "nwfm_foundations",
+        "attachments": [
+            {
+                "name": "'On the Kelvin Near the Old Flint Mill, 1845' by William Simpson, 1898",
+                "type": "image",
+                "url": "nwfm_02.jpg",
+                "thumbnail": "nwfm_02"
+            }
+        ]
     },
     {
         "name": "Mill Wheels",
@@ -54,31 +43,56 @@ data = [
         "description": "The kiln of North Woodside Flint Mill.",
         "type": "soi",
         "co_ordinates": "-4.28228,55.87786,35",
-        "thumbnail": "nwfm_kiln"
+        "thumbnail": "nwfm_kiln",
+        "attachments": [
+            {
+                "name": "North Woodside Flint Mill, 1955",
+                "type": "image",
+                "url": "nwfm_01.jpg",
+                "thumbnail": "nwfm_01"
+            },
+        ]
     },
     {
         "name": "Lade",
-        "description": "The lade of North Woodside Colour Mill.",
+        "description": "The lade of North Woodside Flint Mill.",
         "type": "soi",
         "co_ordinates": "-4.28375,55.87832,30",
-        "thumbnail": "nwfm_lade"
+        "thumbnail": "nwfm_lade",
+        "attachments": [
+            {
+                "name": "Map showing the lade of the mill",
+                "type": "image",
+                "url": "nwfm_03.jpg",
+                "thumbnail": "nwfm_03"
+            },
+        ]
     },
     {
         "name": "Dam",
-        "description": "Dam marking the start of the lade of North Woodside Colour Mill.",
+        "description": "Dam marking the start of the lade of North Woodside Flint Mill.",
         "type": "view",
         "co_ordinates": "-4.28511,55.87894,29",
         "thumbnail": "nwfm_dam"
     },
     {
         "name": "Stanchions",
-        "description": "Stanchions of original Queen Margaret Bridge.",
+        "description": "Stanchions of original Queen Margaret Bridge (1870).",
         "type": "view",
         "co_ordinates": "-4.28460,55.87860,40",
+        "thumbnail": "old_qmb",
+        "attachments": [
+            {
+                "name": "The original Queen Margaret Bridge (aka Walkers Bridge), 1870",
+                "type": "image",
+                "url": "old_qmb_full.jpg",
+                "thumbnail": "old_qmb_full"
+            },
+        ]
     },
     {
         "name": "Bridge",
-        "description": "Queen Margaret Bridge.",
+        "description": "Queen Margaret Bridge (1929).",
         "type": "waypoint",
         "waypoint_number" : "3",
         "co_ordinates": "-4.28611,55.87960,42",
@@ -86,35 +100,76 @@ data = [
     },
     {
         "name": "Footbr",
-        "description": "Bridge to Botanic Gardens.",
+        "description": "Humpback Bridge to Botanic Gardens (1893).",
         "type": "waypoint",
         "waypoint_number" : "4",
-        "co_ordinates": "-4.28796,55.87987,31"
+        "co_ordinates": "-4.28796,55.87987,31",
+        "thumbnail": "hb_bridge",
+        "attachments": [
+            {
+                "name": "Wrought iron humpback bridge over the Kelvin, photo 1969",
+                "type": "image",
+                "url": "hb_br_1969.jpg",
+                "thumbnail": "hb_br_1969"
+            },
+            {
+                "name": "Wrought iron humpback bridge over the Kelvin, photo 1976",
+                "type": "image",
+                "url": "hb_br_1976.jpg",
+                "thumbnail": "hb_br_1976"
+            },
+        ]
     },
     {
         "name": "House",
         "description": "Ha'penny Bridge House. Take right fork following the River Kelvin on its South bank.",
         "type": "waypoint",
         "waypoint_number" : "5",
-        "co_ordinates": "-4.29143,55.88146,34"
+        "co_ordinates": "-4.29143,55.88146,34",
+        "thumbnail": "hapny_bridge_ho",
+    },
+    {
+        "name": "Bridge",
+        "description": "Ha'penny Bridge. The original box-girder bridge was washed away in the floods of December 1994; the current wooden replacement was built 2002.",
+        "type": "view",
+        "co_ordinates": "-4.29204,55.88159,34",
+        "thumbnail": "hapny_bridge",
+        "attachments": [
+            {
+                "name": "The original Ha'penny Bridge, built c. 1896. Photo 1974.",
+                "type": "image",
+                "url": "old_hapny_bridge.jpg",
+                "thumbnail": "old_hapny_bridge"
+            },
+        ]
     },
     {
         "name": "Footbr",
         "description": "Garrioch Footbridge to Botanic Gardens Arboretum. Continue North on Kelvin Walkway.",
         "type": "waypoint",
         "waypoint_number" : "6",
-        "co_ordinates": "-4.28976,55.88415,31"
+        "co_ordinates": "-4.28976,55.88415,31",
+        "thumbnail": "garriochbridge",
     },
     {
         "name": "Viaducts",
         "description": "Disused rail viaducts - originally Maryhill Central Junction of the Glasgow Central and Lanarkshire and Dumbarton Railways.",
         "type": "waypoint",
         "waypoint_number" : "7",
-        "co_ordinates": "-4.29149,55.88501,41"
+        "co_ordinates": "-4.29149,55.88501,41",
+        "thumbnail": "mcj.png",
+        "attachments": [
+            {
+                "name": "Maryhill Central Junction, 1958.",
+                "type": "image",
+                "url": "MCJ_1958.jpg",
+                "thumbnail": "MCJ_1958"
+            },
+        ]
     },
     {
         "name": "Fork",
-        "description": "Fork to Wyndford Estate. Follow Kelvin Walkway West.",
+        "description": "Fork to Wyndford. Follow Kelvin Walkway West.",
         "type": "waypoint",
         "waypoint_number" : "8",
         "co_ordinates": "-4.29208,55.88541,31"
