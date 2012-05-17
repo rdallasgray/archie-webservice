@@ -24,80 +24,80 @@
       <name>{{ poi.name }}</name>
       <description>{{ poi.description }}</description>
       <wikitude:info>
-	<wikitude:thumbnail>
-	  {% if poi.thumbnail %}
-	  {{ config['ASSETS_BASE_URL'] }}/poi/thumbnails/{{ poi.thumbnail }}.png
-	  {% else %}
-	  {{ config['ASSETS_BASE_URL'] }}/poi/thumbnails/default-{{ poi.type }}-thumbnail.png	  
-	  {% endif %}
-	</wikitude:thumbnail>
-	{% if poi.hi_res_image_url %}
-	<wikitude:hiResImageUrl>
-	  {{ poi.hi_res_image_url }}
-	</wikitude:hiResImageUrl>
-	{% endif %}
-	<wikitude:markerIconUrl>
-	{% if poi.type=='waypoint' %}
-	  {{ config['ASSETS_BASE_URL'] }}/poi/waypoint-icon-{{ poi.waypoint_number }}.png
-	{% elif poi.type=='view' %}
-	  {{ config['ASSETS_BASE_URL'] }}/poi/view-icon.png
-	{% elif poi.type=='soi' %}
-	  {{ config['ASSETS_BASE_URL'] }}/poi/soi-icon.png
-	{% elif poi.type=='find' %}
-	  {{ config['ASSETS_BASE_URL'] }}/poi/find-icon.png
-	{% else %}
-	  {{ config['ASSETS_BASE_URL'] }}/poi/default-marker-icon.png
-	{% endif %}
-	</wikitude:markerIconUrl>
-	{% if poi.attachments %}
-	<wikitude:attachments>
-	  {% for attachment in poi.attachments %}
-	  <wikitude:attachment name="{{ attachment.name }}">
-	    {% if attachment.thumbnail %}
-	    <wikitude:attachment-thumbnail>
-	    {{ config['ASSETS_BASE_URL'] }}/attachment/thumbnails/{{ attachment.thumbnail }}.png
-	    </wikitude:attachment-thumbnail>
-	    {% endif %}
-	    <wikitude:attachment-url>
-	    {{ config['ASSETS_BASE_URL'] }}/attachment/{{ attachment.url }}
-	    </wikitude:attachment-url> 
-	  </wikitude:attachment>
-	  {% endfor %}
-	</wikitude:attachments>
-	{% endif %}
+	      <wikitude:thumbnail>
+	        {% if poi.thumbnail %}
+	        {{ config['ASSETS_BASE_URL'] }}/attachment/thumbnails/{{ poi.thumbnail }}.png
+	        {% else %}
+	        {{ config['ASSETS_BASE_URL'] }}/poi/thumbnails/default-{{ poi.type }}-thumbnail.png	  
+	        {% endif %}
+	      </wikitude:thumbnail>
+	      {% if poi.hi_res_image_url %}
+	      <wikitude:hiResImageUrl>
+	        {{ poi.hi_res_image_url }}
+	      </wikitude:hiResImageUrl>
+	      {% endif %}
+	      <wikitude:markerIconUrl>
+	        {% if poi.type=='waypoint' %}
+	        {{ config['ASSETS_BASE_URL'] }}/poi/waypoint-icon-{{ poi.waypoint_number }}.png
+	        {% elif poi.type=='view' %}
+	        {{ config['ASSETS_BASE_URL'] }}/poi/view-icon.png
+	        {% elif poi.type=='soi' %}
+	        {{ config['ASSETS_BASE_URL'] }}/poi/soi-icon.png
+	        {% elif poi.type=='find' %}
+	        {{ config['ASSETS_BASE_URL'] }}/poi/find-icon.png
+	        {% else %}
+	        {{ config['ASSETS_BASE_URL'] }}/poi/default-marker-icon.png
+	        {% endif %}
+	      </wikitude:markerIconUrl>
+	      {% if poi.attachments %}
+	      <wikitude:attachments>
+	        {% for attachment in poi.attachments %}
+	        <wikitude:attachment name="{{ attachment.name }}">
+	          {% if attachment.thumbnail %}
+	          <wikitude:attachment-thumbnail>
+	            {{ config['ASSETS_BASE_URL'] }}/attachment/thumbnails/{{ attachment.thumbnail }}.png
+	          </wikitude:attachment-thumbnail>
+	          {% endif %}
+	          <wikitude:attachment-url>
+	            {{ config['ASSETS_BASE_URL'] }}/attachment/{{ attachment.url }}
+	          </wikitude:attachment-url> 
+	        </wikitude:attachment>
+	        {% endfor %}
+	      </wikitude:attachments>
+	      {% endif %}
       </wikitude:info>
       <wikitude:targets>
-	<wikitude:target name="CLICK_MAP">
-	  <wikitude:tExecution>
-	    <wikitude:tUrl>
-	      {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=click_map&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
-	    </wikitude:tUrl>
-	  </wikitude:tExecution>
-	</wikitude:target>
-	<wikitude:target name="CLICK_CAM">
-	  <wikitude:tExecution>
-	    <wikitude:tUrl>
-	      {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=click_cam&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
-	    </wikitude:tUrl>
-	  </wikitude:tExecution>
-	</wikitude:target>
-	<wikitude:target name="VIEW_DETAILS">
-	  <wikitude:tExecution>
-	    <wikitude:tUrl>
-	      {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=view_details&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
-	    </wikitude:tUrl>
-	  </wikitude:tExecution>
-	</wikitude:target>
-	<wikitude:target name="VISIT_WEBPAGE">
-	  <wikitude:tExecution>
-	    <wikitude:tUrl>
-	      {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=visit_webpage&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
-	    </wikitude:tUrl>
-	  </wikitude:tExecution>
-	</wikitude:target>
+	      <wikitude:target name="CLICK_MAP">
+	        <wikitude:tExecution>
+	          <wikitude:tUrl>
+	            {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=click_map&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
+	          </wikitude:tUrl>
+	        </wikitude:tExecution>
+	      </wikitude:target>
+	      <wikitude:target name="CLICK_CAM">
+	        <wikitude:tExecution>
+	          <wikitude:tUrl>
+	            {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=click_cam&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
+	          </wikitude:tUrl>
+	        </wikitude:tExecution>
+	      </wikitude:target>
+	      <wikitude:target name="VIEW_DETAILS">
+	        <wikitude:tExecution>
+	          <wikitude:tUrl>
+	            {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=view_details&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
+	          </wikitude:tUrl>
+	        </wikitude:tExecution>
+	      </wikitude:target>
+	      <wikitude:target name="VISIT_WEBPAGE">
+	        <wikitude:tExecution>
+	          <wikitude:tUrl>
+	            {{ config['WORLD_PROVIDER_URL'] }}/target_add?poi_id={{ poi.id }}&amp;action=visit_webpage&amp;ip=%%IP%%&amp;user_agent=%%USER_AGENT%%&amp;device=%%DEVICE%%&amp;os=%%OS%%&amp;action_time=%%ACTION_TIME%%&amp;latitude=%%LATITUDE_DEC%%&amp;longitude=%%LONGITUDE_DEC%%
+	          </wikitude:tUrl>
+	        </wikitude:tExecution>
+	      </wikitude:target>
       </wikitude:targets>
       <Point>
-	<coordinates>{{ poi.co_ordinates }}</coordinates>
+	      <coordinates>{{ poi.co_ordinates }}</coordinates>
       </Point>
     </Placemark>
     {% endfor %}

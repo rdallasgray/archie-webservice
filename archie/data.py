@@ -5,7 +5,6 @@ data = [
         "type": "waypoint",
         "waypoint_number" : "1",
         "co_ordinates": "-4.27907,55.87776,43",
-        "thumbnail": "ksm"
     },
     {
         "name": "Mill",
@@ -13,7 +12,6 @@ data = [
         "type": "waypoint",
         "waypoint_number" : "2",
         "co_ordinates": "-4.28160,55.87800,32",
-        "thumbnail": "nwfm_remains"
 
     },
     {
@@ -21,7 +19,7 @@ data = [
         "description": "Foundations of North Woodside Flint Mill.",
         "type": "soi",
         "co_ordinates": "-4.28194,55.87797,33",
-        "thumbnail": "nwfm_foundations",
+        "thumbnail": "nwfm_02",
         "attachments": [
             {
                 "name": "'On the Kelvin Near the Old Flint Mill, 1845' by William Simpson, 1898",
@@ -35,15 +33,14 @@ data = [
         "name": "Mill Wheels",
         "description": "Mill wheels from North Woodside Flint Mill.",
         "type": "soi",
-        "co_ordinates": "-4.28216,55.87789,32",
-        "thumbnail": "nwfm_millwheel"
+        "co_ordinates": "-4.28216,55.87789,32"
     },
     {
         "name": "Kiln",
         "description": "The kiln of North Woodside Flint Mill.",
         "type": "soi",
         "co_ordinates": "-4.28228,55.87786,35",
-        "thumbnail": "nwfm_kiln",
+        "thumbnail": "nwfm_01",
         "attachments": [
             {
                 "name": "North Woodside Flint Mill, 1955",
@@ -58,7 +55,7 @@ data = [
         "description": "The lade of North Woodside Flint Mill.",
         "type": "soi",
         "co_ordinates": "-4.28375,55.87832,30",
-        "thumbnail": "nwfm_lade",
+        "thumbnail": "nwfm_03",
         "attachments": [
             {
                 "name": "Map showing the lade of the mill",
@@ -73,14 +70,13 @@ data = [
         "description": "Dam marking the start of the lade of North Woodside Flint Mill.",
         "type": "view",
         "co_ordinates": "-4.28511,55.87894,29",
-        "thumbnail": "nwfm_dam"
     },
     {
         "name": "Stanchions",
         "description": "Stanchions of original Queen Margaret Bridge (1870).",
         "type": "view",
         "co_ordinates": "-4.28460,55.87860,40",
-        "thumbnail": "old_qmb",
+        "thumbnail": "old_qmb_full",
         "attachments": [
             {
                 "name": "The original Queen Margaret Bridge (aka Walkers Bridge), 1870",
@@ -96,7 +92,6 @@ data = [
         "type": "waypoint",
         "waypoint_number" : "3",
         "co_ordinates": "-4.28611,55.87960,42",
-        "thumbnail": "qmb"
     },
     {
         "name": "Footbr",
@@ -104,7 +99,7 @@ data = [
         "type": "waypoint",
         "waypoint_number" : "4",
         "co_ordinates": "-4.28796,55.87987,31",
-        "thumbnail": "hb_bridge",
+        "thumbnail": "hb_br_1969",
         "attachments": [
             {
                 "name": "Wrought iron humpback bridge over the Kelvin, photo 1969",
@@ -126,14 +121,13 @@ data = [
         "type": "waypoint",
         "waypoint_number" : "5",
         "co_ordinates": "-4.29143,55.88146,34",
-        "thumbnail": "hapny_bridge_ho",
     },
     {
         "name": "Bridge",
         "description": "Ha'penny Bridge. The original box-girder bridge was washed away in the floods of December 1994; the current wooden replacement was built 2002.",
         "type": "view",
         "co_ordinates": "-4.29204,55.88159,34",
-        "thumbnail": "hapny_bridge",
+        "thumbnail": "old_hapny_bridge",
         "attachments": [
             {
                 "name": "The original Ha'penny Bridge, built c. 1896. Photo 1974.",
@@ -149,21 +143,26 @@ data = [
         "type": "waypoint",
         "waypoint_number" : "6",
         "co_ordinates": "-4.28976,55.88415,31",
-        "thumbnail": "garriochbridge",
     },
     {
         "name": "Viaducts",
-        "description": "Disused rail viaducts - originally Maryhill Central Junction of the Glasgow Central and Lanarkshire and Dumbarton Railways.",
+        "description": "Disused rail viaducts at Garrioch Quadrant - originally Maryhill Central Junction of the Glasgow Central and Lanarkshire and Dumbarton Railways.",
         "type": "waypoint",
         "waypoint_number" : "7",
         "co_ordinates": "-4.29149,55.88501,41",
-        "thumbnail": "mcj.png",
+        "thumbnail": "MCJ_1958",
         "attachments": [
             {
                 "name": "Maryhill Central Junction, 1958.",
                 "type": "image",
                 "url": "MCJ_1958.jpg",
                 "thumbnail": "MCJ_1958"
+            },
+            {
+                "name": "Maryhill Central Junction, 1969.",
+                "type": "image",
+                "url": "MCJ_1969.jpg",
+                "thumbnail": "MCJ_1969"
             },
         ]
     },
@@ -173,7 +172,7 @@ data = [
         "type": "waypoint",
         "waypoint_number" : "8",
         "co_ordinates": "-4.29208,55.88541,31",
-        "thumbnail": "wyndford.png",
+        "thumbnail": "m_barracks",
         "attachments": [
             {
                 "name": "Maryhill Barracks, 1903.",
@@ -184,18 +183,24 @@ data = [
         ]
     },
     {
-        "name": "Road Crossing",
+        "name": "Crossing",
         "description": "Kelvindale Road. Cross and continue North on Kelvin Walkway.",
         "type": "waypoint",
         "waypoint_number" : "9",
         "co_ordinates": "-4.29735,55.88805,28"
     },
     {
+        "name": "Piers",
+        "description": "Bridge piers remaining from the site of Kelvindale paper mills.",
+        "type": "view",
+        "co_ordinates": "-4.29966,55.89055,34",
+    },
+    {
         "name": "Weir",
         "description": "The distinctive V-shaped weir of Kelvindale Paper Mills. The mills were demolished in the late 1970s to make way for private housing.",
         "type": "view",
         "co_ordinates": "-4.30024,55.89118,34",
-        "thumbnail": "balgray",
+        "thumbnail": "kd_paper_mills",
         "attachments": [
             {
                 "name": "Kelvindale Paper Mills, 1903.",
@@ -220,16 +225,100 @@ data = [
     },
     {
         "name": "Aqueduct",
-        "description": "Kelvin Aqueduct.",
+        "description": "Kelvin Aqueduct (1790). The largest canal aqueduct in Europe when it opened, it underwent significant repair in 2000.",
         "type": "soi",
-        "co_ordinates": "-4.30186,55.89240,46"
+        "co_ordinates": "-4.30186,55.89240,46",
+        "thumbnail": "ka_1825",
+        "attachments": [
+            {
+                "name": "Kelvin Aqueduct, 1970.",
+                "type": "image",
+                "url": "ka_1970.jpg",
+                "thumbnail": "ka_1970"
+            },
+            {
+                "name": "Drawing of Kelvin Aqueduct, c. 1825.",
+                "type": "image",
+                "url": "ka_1825.jpg",
+                "thumbnail": "ka_1825"
+            },
+            {
+                "name": "Drawing of Kelvin Aqueduct, c. 1835.",
+                "type": "image",
+                "url": "ka_1835.jpg",
+                "thumbnail": "ka_1835"
+            },
+        ]
+    },
+    {
+        "name": "Bridge",
+        "description": "Disused bridge carrying Bantaskin Street between Maryhill and Kelvindale.",
+        "type": "soi",
+        "co_ordinates": "-4.30269,55.89284,32",
+        "thumbnail": "bantaskin_br",
+        "attachments": [
+            {
+                "name": "Bantaskin Street Bridge, 1970s.",
+                "type": "image",
+                "url": "bantaskin_br.jpg",
+                "thumbnail": "bantaskin_br"
+            },
+        ]
+    },
+    {
+        "name": "Printworks",
+        "description": "Site of Dawsholm Printworks. The printworks extended for several hundred meters upstream, past the Kelvin Viaduct.",
+        "type": "soi",
+        "co_ordinates": "-4.30114,55.89310,32",
+        "thumbnail": "dpm_70s_br",
+        "attachments": [
+            {
+                "name": "Dawsholm Printworks, 1970s. The old gasworks is visible on the west bank.",
+                "type": "image",
+                "url": "dpm_70s.jpg",
+                "thumbnail": "dpm_70s"
+            },
+            {
+                "name": "Dawsholm Printworks, 1970s. Looking north to Kelvin Viaduct.",
+                "type": "image",
+                "url": "dpm_n.jpg",
+                "thumbnail": "dpm_n"
+            },
+        ]
+    },
+    {
+        "name": "Piers",
+        "description": "Remains of a bridge connecting Dawsholm Printworks to the west bank of the Kelvin.",
+        "type": "soi",
+        "co_ordinates": "-4.30144,55.89347,31"
     },
     {
         "name": "Viaduct",
-        "description": "Maryhill-Kelvindale Viaduct. Follow Kelvin Walkway Northwest.",
+        "description": "Kelvin Viaduct (in fact two separate viaducts, 1890). Still in use carrying trains between Maryhill and Kelvindale stations. Follow Kelvin Walkway Northwest.",
         "type": "waypoint",
         "waypoint_number" : "11",
-        "co_ordinates": "-4.30385,55.89648,44"
+        "co_ordinates": "-4.30385,55.89648,44",
+        "thumbnail": "kv_1890",
+        "attachments": [
+            {
+                "name": "Building a span of the Kelvin Viaduct, 1890.",
+                "type": "image",
+                "url": "kv_1890.jpg",
+                "thumbnail": "kv_1890"
+            },
+            {
+                "name": "Kelvin Viaduct, 1970.",
+                "type": "image",
+                "url": "kv_1970.jpg",
+                "thumbnail": "kv_1970"
+            },
+            {
+                "name": "Kelvin Viaduct, 1977.",
+                "type": "image",
+                "url": "kv_1977.jpg",
+                "thumbnail": "kv_1977"
+            },
+        ]
     },
     {
         "name": "Dam",
