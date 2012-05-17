@@ -28,7 +28,7 @@
 	  {% if poi.thumbnail %}
 	  {{ config['ASSETS_BASE_URL'] }}/poi/thumbnails/{{ poi.thumbnail }}.png
 	  {% else %}
-	  {{ config['ASSETS_BASE_URL'] }}/poi/default-poi-thumbnail.png	  
+	  {{ config['ASSETS_BASE_URL'] }}/poi/default-{{ poi.type }}-thumbnail.png	  
 	  {% endif %}
 	</wikitude:thumbnail>
 	{% if poi.hi_res_image_url %}

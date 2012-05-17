@@ -169,10 +169,19 @@ data = [
     },
     {
         "name": "Fork",
-        "description": "Fork to Wyndford. Follow Kelvin Walkway West.",
+        "description": "Fork to Wyndford. Follow Kelvin Walkway West. Wyndford is the former site of Maryhill Barracks, built in 1872 and closed in the early 1960s.",
         "type": "waypoint",
         "waypoint_number" : "8",
-        "co_ordinates": "-4.29208,55.88541,31"
+        "co_ordinates": "-4.29208,55.88541,31",
+        "thumbnail": "wyndford.png",
+        "attachments": [
+            {
+                "name": "Maryhill Barracks, 1903.",
+                "type": "image",
+                "url": "m_barracks.jpg",
+                "thumbnail": "m_barracks"
+            },
+        ]
     },
     {
         "name": "Road Crossing",
@@ -183,9 +192,24 @@ data = [
     },
     {
         "name": "Weir",
-        "description": "Balgray Mill Weir.",
+        "description": "The distinctive V-shaped weir of Kelvindale Paper Mills. The mills were demolished in the late 1970s to make way for private housing.",
         "type": "view",
-        "co_ordinates": "-4.30024,55.89118,34"
+        "co_ordinates": "-4.30024,55.89118,34",
+        "thumbnail": "balgray",
+        "attachments": [
+            {
+                "name": "Kelvindale Paper Mills, 1903.",
+                "type": "image",
+                "url": "kd_paper_mills.jpg",
+                "thumbnail": "kd_paper_mills"
+            },
+        ]
+    },
+    {
+        "name": "Piers",
+        "description": "Bridge piers remaining from the site of Kelvindale paper mills.",
+        "type": "view",
+        "co_ordinates": "-4.30121,55.89176,34",
     },
     {
         "name": "Canal",
