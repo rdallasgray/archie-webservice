@@ -279,7 +279,7 @@ data = [
         "description": "Site of Dawsholm Printworks. The printworks extended for several hundred meters upstream, past the Kelvin Viaduct.",
         "type": "soi",
         "co_ordinates": "-4.30114,55.89310,32",
-        "thumbnail": "dpm_70s_br",
+        "thumbnail": "dpm_70s",
         "attachments": [
             {
                 "name": "Dawsholm Printworks, 1970s. The old gasworks is visible on the west bank.",
