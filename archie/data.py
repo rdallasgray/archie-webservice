@@ -66,8 +66,8 @@ data = [
         ]
     },
     {
-        "name": "Dam",
-        "description": "Dam marking the start of the lade of North Woodside Flint Mill.",
+        "name": "Weir",
+        "description": "Weir marking the start of the lade of North Woodside Flint Mill.",
         "type": "view",
         "co_ordinates": "-4.28511,55.87894,29",
     },
@@ -94,7 +94,7 @@ data = [
         "co_ordinates": "-4.28611,55.87960,42",
     },
     {
-        "name": "Footbr",
+        "name": "Footbridge",
         "description": "Humpback Bridge to Botanic Gardens (1893).",
         "type": "waypoint",
         "waypoint_number" : "4",
@@ -138,7 +138,7 @@ data = [
         ]
     },
     {
-        "name": "Footbr",
+        "name": "Footbridge",
         "description": "Garrioch Footbridge to Botanic Gardens Arboretum. Continue North on Kelvin Walkway.",
         "type": "waypoint",
         "waypoint_number" : "6",
@@ -378,14 +378,14 @@ data = [
     },
     {
         "name": "Science Park",
-        "description": "West of Scotland Science Park. Turn right towards Maryhill Road pavement and cycle path.",
+        "description": "West of Scotland Science Park. Turn right towards Maryhill Road pavement.",
         "type": "waypoint",
         "waypoint_number" : "14",
         "co_ordinates": "-4.31000,55.90140,40"
     },
     {
         "name": "Road",
-        "description": "Maryhill Road. Follow Maryhill Road (A81) North on pavement or cycleway.",
+        "description": "Maryhill Road. Follow Maryhill Road (A81) North on pavement.",
         "type": "waypoint",
         "waypoint_number" : "15",
         "co_ordinates": "-4.30907,55.90153,43"
@@ -405,7 +405,7 @@ data = [
         "co_ordinates": "-4.31027,55.90403,41"
     },
     {
-        "name": "Observtry",
+        "name": "Observatory",
         "description": "Glasgow University Acre Road Observatory.",
         "type": "soi",
         "co_ordinates": "-4.30790,55.90253,41"
@@ -450,15 +450,6 @@ data = [
         "description": "Part of the path of the dismantled Kelvin Valley Railway, which ran between Kilsyth and Maryhill until 1966.",
         "type": "soi",
         "co_ordinates": "-4.28724,55.91097,41",
-        "thumbnail": "kmh",
-        "attachments": [
-            {
-                "name": "Killermont House. Photograph by Thomas Annan, 1855.",
-                "type": "image",
-                "url": "kmh.jpg",
-                "thumbnail": "kmh"
-            },
-        ]
     },
     {
         "name": "Bridge",
@@ -570,42 +561,255 @@ data = [
         "name": "Fortlet",
         "description": "The fortlet is a short walk back northwest, just south of some barns.",
         "type": "soi",
-        "co_ordinates": "-4.24593,55.92170,69"
+        "co_ordinates": "-4.24593,55.92170,69",
+        "thumbnail": "wp_aerial",
+        "attachments": [
+            {
+                "name": "Aerial view of the Wilderness Plantation Fortlet, 1974. The site of the fortlet can be seen below the sheds.",
+                "type": "image",
+                "url": "wp_aerial.jpg",
+                "thumbnail": "wp_aerial"
+            },
+            {
+                "name": "Plan of the fortlet, 1974. The north of the fort abutted the Wall, the other sides being protected by ramparts and ditches.",
+                "type": "image",
+                "url": "wp_plan.jpg",
+                "thumbnail": "wp_plan"
+            },
+            {
+                "name": "Map of the area, showing the path of the Wall and the fortlet.",
+                "type": "image",
+                "url": "wp_map.jpg",
+                "thumbnail": "wp_map"
+            },
+        ]
     },
     {
         "name": "Golf Club",
         "description": "Cawder Golf Club. Turn South on Balmuildy Road.",
         "type": "waypoint",
         "waypoint_number" : "25",
-        "co_ordinates": "-4.23703,55.92281,74"
+        "co_ordinates": "-4.23703,55.92281,74",
+    },
+    {
+        "name": "Bridge",
+        "description": "Farm Bridge has been replaced twice: once in the 1960s when the canal was closed, and again in 2000 when the canal reopened. Take the north bank of the canal towpath heading west.",
+        "type": "waypoint",
+        "waypoint_number" : "26",
+        "co_ordinates": "-4.23328,55.91720,51",
+        "thumbnail": "fb_01",
+        "attachments": [
+            {
+                "name": "The original bascule bridge.",
+                "type": "image",
+                "url": "fb_01.jpg",
+                "thumbnail": "fb_01"
+            },
+            {
+                "name": "The bridgekeeper's house.",
+                "type": "image",
+                "url": "fb_bkh.jpg",
+                "thumbnail": "fb_bkh"
+            },
+            {
+                "name": "The first replacement bridge, 1990.",
+                "type": "image",
+                "url": "fb_02.jpg",
+                "thumbnail": "fb_02"
+            },
+        ]
     },
     {
         "name": "Canal",
-        "description": "Forth and Clyde Canal. Turn West, taking the towpath on the North bank of the canal.",
-        "type": "waypoint",
-        "waypoint_number" : "26",
-        "co_ordinates": "-4.23335,55.91734,51"
+        "description": "Construction of the canal began in 1768, and it was opened in 1790. The Cadder and Bishopbriggs area of the canal was used to transport coal and ironstone. In 1963 the canal was derelicted, before being gradually reopened from 2000.",
+        "type": "soi",
+        "co_ordinates": "-4.23638,55.91684,49",
+        "thumbnail": "bb_01",
+        "attachments": [
+            {
+                "name": "Horse-drawn barge at Bishopbriggs, 1975.",
+                "type": "image",
+                "url": "bb_01.jpg",
+                "thumbnail": "bb_01"
+            },
+            {
+                "name": "The bridgekeeper's house.",
+                "type": "image",
+                "url": "fb_bkh.jpg",
+                "thumbnail": "fb_bkh"
+            },
+            {
+                "name": "The first replacement bridge, 1990.",
+                "type": "image",
+                "url": "fb_02.jpg",
+                "thumbnail": "fb_02"
+            },
+        ]
+    },
+    {
+        "name": "Track",
+        "description": "This track was once the main street of Mavis Valley mine site. Mavis Valley now only exists as the name of the refuse plant hidden by Wilderness Plantation.",
+        "type": "soi",
+        "co_ordinates": "-4.24094,55.91606,49",
+        "thumbnail": "mv_01",
+        "attachments": [
+            {
+                "name": "Cottages at Miners' Row, Mavis Valley, mid 19th C.",
+                "type": "image",
+                "url": "mv_01.jpg",
+                "thumbnail": "mv_01"
+            }
+        ]
     },
     {
         "name": "Loch",
-        "description": "Possil Loch. This is an excellent site for birdwatching. Continue South on the canal towpath.",
+        "description": "Possil Loch and the protected Possil Marsh wildlife site. Ospreys are known to pause here during migration. Continue South on the canal towpath.",
         "type": "waypoint",
         "waypoint_number" : "27",
         "co_ordinates": "-4.26140,55.90273,49"
     },
     {
-        "name": "Crossing",
-        "description": "Lochburn Road. Cross to the South bank of the canal and proceed North then Southwest.",
+        "name": "Bridge",
+        "description": "Lambhill Bridge. When the canal was built, this was a quiet rural area, although there was mining nearby.",
+        "type": "soi",
+        "co_ordinates": "-4.26587,55.89690,55",
+        "thumbnail": "lhb_01",
+        "attachments": [
+            {
+                "name": "The original bascule bridge, with the pleasure steamer Gipsy Queen, c. 1910.",
+                "type": "image",
+                "url": "lhb_01.jpg",
+                "thumbnail": "lhb_01"
+            },
+            {
+                "name": "The original bascule bridge, c. 1910.",
+                "type": "image",
+                "url": "lhb_02.jpg",
+                "thumbnail": "lhb_02"
+            }
+        ]
+    },
+    {
+        "name": "Stables",
+        "description": "Lambhill Stables. Built in the 1830s to provide relay horses for canal work, it survived as a bridge-keeper's house until 1962.",
+        "type": "soi",
+        "co_ordinates": "-4.26534,55.89724,60",
+        "thumbnail": "lhs_01",
+        "attachments": [
+            {
+                "name": "The stables in 1965.",
+                "type": "image",
+                "url": "lhs_01.jpg",
+                "thumbnail": "lhs_01"
+            },
+        ]
+    },
+    {
+        "name": "Aqueduct",
+        "description": "Cadder Aqueduct, c. 1858. Probably completed in two stages as the railway began as a single track.",
+        "type": "soi",
+        "co_ordinates": "-4.27319,55.89320,49",
+        "thumbnail": "ca_01",
+        "attachments": [
+            {
+                "name": "Cadder Aqueduct, 1970.",
+                "type": "image",
+                "url": "ca_01.jpg",
+                "thumbnail": "ca_01"
+            },
+        ]
+    },
+    {
+        "name": "Fork",
+        "description": "Fork to Lochburn Road. Follow the fork under the aqueduct, then cross Lochburn Road heading north to meet the canal towpath again. Follow the curve to continue southwest on the south bank.",
         "type": "waypoint",
         "waypoint_number" : "28",
-        "co_ordinates": "-4.28608,55.89283,50"
+        "co_ordinates": "-4.28438,55.89321,50"
+    },
+    {
+        "name": "Aqueduct",
+        "description": "Lochburn Road Aqueduct, 1780s.",
+        "type": "soi",
+        "co_ordinates": "-4.28621,55.89277,50",
+        "thumbnail": "lra_01",
+        "attachments": [
+            {
+                "name": "Lochburn Road Aqueduct, 1967.",
+                "type": "image",
+                "url": "lra_01.jpg",
+                "thumbnail": "lra_01"
+            },
+        ]
+    },
+    {
+        "name": "Junction",
+        "description": "Stockingfield Junction. Here the main line of the canal, heading to Grangemouth, branches east. The Glasgow branch continues to Bowling.",
+        "type": "soi",
+        "co_ordinates": "-4.28594,55.89258,48",
+        "thumbnail": "sj_01",
+        "attachments": [
+            {
+                "name": "Stockingfield Junction, 1967.",
+                "type": "image",
+                "url": "sj_01.jpg",
+                "thumbnail": "sj_01"
+            },
+        ]
+    },
+    {
+        "name": "Aqueduct",
+        "description": "Maryhill Road Aqueduct, 1881.",
+        "type": "soi",
+        "co_ordinates": "-4.29260,55.89161,47",
+        "thumbnail": "mra_01",
+        "attachments": [
+            {
+                "name": "Maryhill Road Aqueduct, 1967. The inner arch carries the canal and the lighter outer ones the towpaths.",
+                "type": "image",
+                "url": "mra_01.jpg",
+                "thumbnail": "mra_01"
+            },
+        ]
     },
     {
         "name": "Locks",
-        "description": "Maryhill Locks. Continue West on the canal towpath.",
+        "description": "Maryhill Locks. A flight of five locks with intermediate basins, designed as part of the completion of the Glasgow branch of the canal around 1790.",
         "type": "waypoint",
         "waypoint_number" : "29",
-        "co_ordinates": "-4.29648,55.89259,51"
+        "co_ordinates": "-4.29665,55.89287,50",
+        "thumbnail": "mhl_01",
+        "attachments": [
+            {
+                "name": "Maryhill Locks, 1967.",
+                "type": "image",
+                "url": "mhl_01.jpg",
+                "thumbnail": "mhl_01"
+            },
+            {
+                "name": "Maryhill Locks, 1967.",
+                "type": "image",
+                "url": "mhl_03.jpg",
+                "thumbnail": "mhl_03"
+            },
+            {
+                "name": "Maryhill Locks, 1967.",
+                "type": "image",
+                "url": "mhl_03.jpg",
+                "thumbnail": "mhl_03"
+            },
+            {
+                "name": "Maryhill Locks, 1977.",
+                "type": "image",
+                "url": "mhl_04.jpg",
+                "thumbnail": "mhl_04"
+            },
+            {
+                "name": "Lockkeeper's Cottage, 1956.",
+                "type": "image",
+                "url": "mhl_05.jpg",
+                "thumbnail": "mhl_05"
+            },
+        ]
     },
     {
         "name": "Walkway",
