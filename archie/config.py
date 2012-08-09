@@ -4,7 +4,7 @@ class Config(object):
     DEBUG = False
     TESTING = False
     LOCAL_DATABASE_URL = 'postgres://archie:Antonine2008@localhost/archie'
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', LOCAL_DATABASE_URL)
+    SQLALCHEMY_DATABASE_URI = os.environ.get('HEROKU_POSTGRESQL_VIOLET', LOCAL_DATABASE_URL)
     WORLD_PROVIDER_ID = 'archie-antonine'
     WORLD_PROVIDER_URL = 'http://vivid-mist-1942.herokuapp.com'
     WORLD_NAME = 'ARCHIE: A Walking Tour on the Antonine Wall'
